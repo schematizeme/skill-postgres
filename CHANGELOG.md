@@ -3,6 +3,14 @@
 Todas as mudanças relevantes deste pacote, no formato [Keep a Changelog](https://keepachangelog.com/pt-BR/1.1.0/),
 com versionamento [SemVer](https://semver.org/lang/pt-BR/).
 
+## [0.2.0] — 2026-10-14
+Integração ao catálogo: orçamento de description e ponteiros entre as irmãs novas.
+
+### Alterado
+- `description` <=190 (orçamento do catálogo).
+- Divisas: `schematize-incident` (banco em incidente), `schematize-payments` (ledger), `schematize-git` (`/git-leak` para credencial de banco).
+- Motivo: o catálogo estourou o orçamento de listagem com 45 skills; cada fronteira aponta a dona em vez de duplicar.
+
 ## [0.1.0] — 2026-10-14
 Primeira versão. A `schematize-database` cobre o **desenho** do schema (inclusive o método
 expand-contract), mas ninguém na casa cobria o **motor**: qual DDL toma `ACCESS EXCLUSIVE`, por que a

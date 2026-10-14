@@ -3,7 +3,7 @@ name: schematize-postgres
 metadata:
   version: 0.1.0
 description: >-
-  Operar o PostgreSQL: config, EXPLAIN e índices, vacuum, locks e migrations seguras, PgBouncer, replicação, backup/PITR com restore testado, pg_upgrade, RLS e roles. Use ao tocar *.sql ou postgresql.conf. Schema: schematize-database.
+  Operar PostgreSQL: EXPLAIN e índices, vacuum, locks, migrations, replicação, backup/PITR com restore testado, RLS. Use ao tocar *.sql ou postgresql.conf. Schema: schematize-database.
 ---
 <!-- cross-skill: modelo-relacional.md, migrations.md, normalizacao-chaves-indices.md -> schematize-database -->
 
@@ -51,6 +51,9 @@ operação**.
 | **Motor e operação**: config, EXPLAIN, vacuum, locks, migration segura (`lock_timeout`, `CONCURRENTLY`, `NOT VALID`), pooling, replicação, backup/PITR, `pg_upgrade`, RLS e roles | **esta skill** | `references/*.md` abaixo |
 | Dado em movimento: pipeline, CDC, outbox, warehouse, backfill como pipeline | `schematize-data` | `schematize-data → references/armazenamento.md` |
 | Backup/DR genérico, rede/TLS, segredos, isolamento por serviço, IaC | `schematize-infra` | `schematize-infra → references/resiliencia.md`, `isolamento.md`; aqui só o que é específico do Postgres |
+| Banco em incidente: declarar SEV, papéis, comunicação, postmortem | `schematize-incident` | aqui o ferramental (failover, PITR); lá a condução |
+| Ledger e transação financeira (invariantes, idempotência de cobrança) | `schematize-payments` | aqui locks/isolamento do motor; lá o modelo do ledger |
+| Credencial do banco commitada | `schematize-git` | `/git-leak`; `schematize-git → references/segredos.md` |
 | Métricas, SLO e alerta (como instrumentar) | `schematize-observability` | `schematize-observability`; aqui só **quais** métricas do Postgres importam |
 | Container do Postgres, volume, healthcheck | `schematize-docker` | `schematize-docker → Dockerfile, compose` |
 | Query parametrizada, ORM, pool no cliente | skill de linguagem | `schematize-go`/`rust`/`elixir`/`csharp`/`zig`/`ruby` |
