@@ -1,0 +1,12 @@
+slug = "postgres"
+name = "schematize-postgres"
+tag = "Disciplina · Operação do PostgreSQL"
+status = "beta"
+order = 46
+current_version = "0.2.0"
+href = "/postgres"
+
+[descriptions]
+pt = "Operação do PostgreSQL da casa: versão suportada e EOL, config, EXPLAIN e índices na prática, vacuum e bloat, locks e migrations seguras em tabela viva, PgBouncer, replicação e failover, backup/PITR com restore testado, pg_upgrade, roles de menor privilégio e RLS multi-tenant."
+en = "The house's PostgreSQL operations: supported version and EOL, configuration, EXPLAIN and indexes in practice, vacuum and bloat, locks and safe live-table migrations, PgBouncer, replication and failover, backup/PITR with tested restores, pg_upgrade, least-privilege roles and multi-tenant RLS."
+es = "La operación de PostgreSQL de la casa: versión soportada y EOL, configuración, EXPLAIN e índices en la práctica, vacuum y bloat, locks y migrations seguras en tabla viva, PgBouncer, replicación y failover, backup/PITR con restore probado, pg_upgrade, roles de mínimo privilegio y RLS multi-tenant."

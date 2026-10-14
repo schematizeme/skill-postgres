@@ -1,7 +1,7 @@
 ---
 name: schematize-postgres
 metadata:
-  version: 0.1.0
+  version: 0.2.0
 description: >-
   Operar PostgreSQL: EXPLAIN e índices, vacuum, locks, migrations, replicação, backup/PITR com restore testado, RLS. Use ao tocar *.sql ou postgresql.conf. Schema: schematize-database.
 ---
@@ -17,7 +17,7 @@ máquina do desenvolvedor e travam a produção por minutos. E o backup que nunc
 não é backup. O **desenho** do schema é da `schematize-database`; aqui é **o motor e a
 operação**.
 
-**Versão:** skill `schematize-postgres` v0.1.0. Changelog em `CHANGELOG.md`.
+**Versão:** skill `schematize-postgres` v0.2.0. Changelog em `CHANGELOG.md`.
 
 ## Precedência e herança (leia antes de divergir)
 
